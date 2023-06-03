@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Projects</title>
+  <style>
+    /* Discord theme styles */
+    body {
+      background-color: #000000;
+      color: #ffffff;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    
+    .header {
+      background-color: #ffff00;
+      padding: 20px;
+      text-align: left; /* Update: changed to left alignment */
+    }
+    
+    .header h1 {
+      font-family: 'Rosmary', Arial, sans-serif;
+      font-size: 32px;
+      margin-top: 10px;
+      color: #000000;
+      margin-left: 20px; /* Update: added left margin */
+    }
+    
+    .container {
+      margin: 20px;
+      padding: 20px;
+    }
+    
+    .active {
+      color: lightgreen;
+    }
+    
+    .parentheses {
+      color: white;
+    }
+    
+    .clickable-text {
+      cursor: pointer;
+      transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275); /* Updated transition for smoother motion */
+    }
+    
+    .clickable-text:hover {
+      transform: translateY(-5px);
+    }
+    
+    .caption {
+      display: none; /* Hide the caption by default */
+      margin-top: 10px;
+      color: #ffff00; /* Set the color to yellow */
+    }
+    
+    .show-caption {
+      display: block; /* Show the caption when the class is applied */
+    }
+  </style>
+  <link href="https://fonts.googleapis.com/css?family=Rosmary&display=swap" rel="stylesheet">
+  <script>
+    function toggleCaption(element) {
+      var caption = element.nextElementSibling;
+      caption.classList.toggle("show-caption");
+    }
+  </script>
+</head>
+<body>
+  <div class="header">
+    <h1>Projects</h1>
+  </div>
+  
+  <div class="container">
+    <ul>
+      <li><span class="clickable-text" onclick="toggleCaption(this)">Chat GPT bot</span>
+        <div class="caption">Chat GPT bot that you can add it to your app</div>
+      </li>
+      <li><span class="clickable-text" onclick="toggleCaption(this)">GPT 3.5 bot for limitations</span>
+        <div class="caption">this is a chat bot and it will help you to pass limitations</div>
+      </li>
+      <li><span class="clickable-text" onclick="toggleCaption(this)">Using GPT 3.5 in app <span class="parentheses">(</span><span class="active">active</span><span class="parentheses">)</span></span>
+        <div class="caption">source code of GPT to connect to app</div>
+      </li>
+      <li><span class="clickable-text" onclick="toggleCaption(this)">Model training (ML) <span class="parentheses">(</span><span class="active">active</span><span class="parentheses">)</span></span>
+        <div class="caption">train linear models</div>
+      </li>
+      <li><span class="clickable-text" onclick="toggleCaption(this)">Linear car company model</span>
+        <div class="caption">worked on it for self training</div>
+      </li>
+      <li><span class="clickable-text" onclick="toggleCaption(this)">Linear health model</span>
+        <div class="caption">A project I worked on to see my friends health </div>
+      </li>
+      <li><span class="clickable-text" onclick="toggleCaption(this)">QR code generator</span>
+        <div class="caption">used to make this website and another links</div>
+      </li>
+      <li><span class="clickable-text" onclick="toggleCaption(this)">Restaurant back source</span>
+        <div class="caption">first complete python code for selftraining </div>
+      </li>
+    </ul>
+  </div>
+</body>
+</html>
+
+
+
+
+
